@@ -1,8 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>Humais Store</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    color: #222;
+}
+
+header {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+header h1 {
+    font-size: 38px;
+}
+
+header p {
+    color: #ddd;
+    margin-top: 8px;
+}
+
+nav {
+    background: #222;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
     color: white;
     text-decoration: none;
-    margin: 0 12px;
+    margin: 0 15px;
     font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffd700;
 }
 
 .hero {
@@ -26,10 +81,14 @@
     display: inline-block;
     background: #111;
     color: white;
-    text-decoration: none;
     padding: 14px 25px;
     border-radius: 8px;
+    text-decoration: none;
     font-weight: bold;
+}
+
+.btn:hover {
+    background: #c99a00;
 }
 
 .section {
@@ -81,9 +140,13 @@
     display: inline-block;
     background: #111;
     color: white;
-    text-decoration: none;
     padding: 10px 18px;
     border-radius: 7px;
+    text-decoration: none;
+}
+
+.order:hover {
+    background: #c99a00;
 }
 
 .about {
@@ -116,6 +179,7 @@ footer {
 }
 
 @media (max-width: 600px) {
+
     .hero h2 {
         font-size: 32px;
     }
@@ -125,7 +189,7 @@ footer {
     }
 
     nav a {
-        margin: 0 5px;
+        margin: 0 6px;
         font-size: 14px;
     }
 }
@@ -135,8 +199,17 @@ footer {
 <body>
 
 <header>
-    <h1>🛍️ Humais Store</h1>
+
+    <img
+        class="logo"
+        src="a_clean_modern_circular_logo_badge_on_a_dark_blac.png"
+        alt="Humais Store Logo"
+    >
+
+    <h1>Humais Store</h1>
+
     <p>Everything You Need in One Place</p>
+
 </header>
 
 <nav>
@@ -147,12 +220,21 @@ footer {
 </nav>
 
 <section class="hero" id="home">
+
     <h2>Welcome to Humais Store 🚀</h2>
-    <p>Clothes • Shoes • Watches • Electronics • Accessories</p>
-    <a href="#products" class="btn">Shop Now</a>
+
+    <p>
+        Clothes • Shoes • Watches • Electronics • Accessories
+    </p>
+
+    <a href="#products" class="btn">
+        Shop Now
+    </a>
+
 </section>
 
 <section class="section" id="products">
+
     <h2>Our Products 🛒</h2>
 
     <div class="products">
@@ -162,55 +244,86 @@ footer {
             <h3>Clothes</h3>
             <p>Stylish clothes for everyone.</p>
             <div class="price">From Rs. 999</div>
-            <a class="order" href="https://wa.me/923125353996" target="_blank">
+
+            <a
+                class="order"
+                href="https://wa.me/923125353996"
+                target="_blank"
+            >
                 Order Now
             </a>
         </div>
+
 
         <div class="product">
             <div class="icon">👟</div>
             <h3>Shoes</h3>
             <p>Comfortable and stylish shoes.</p>
             <div class="price">From Rs. 1,499</div>
-            <a class="order" href="https://wa.me/923125353996" target="_blank">
+
+            <a
+                class="order"
+                href="https://wa.me/923125353996"
+                target="_blank"
+            >
                 Order Now
             </a>
         </div>
+
 
         <div class="product">
             <div class="icon">⌚</div>
             <h3>Watches</h3>
             <p>Modern watches for every style.</p>
             <div class="price">From Rs. 1,999</div>
-            <a class="order" href="https://wa.me/923125353996" target="_blank">
+
+            <a
+                class="order"
+                href="https://wa.me/923125353996"
+                target="_blank"
+            >
                 Order Now
             </a>
         </div>
+
 
         <div class="product">
             <div class="icon">📱</div>
             <h3>Electronics</h3>
             <p>Useful gadgets and electronics.</p>
             <div class="price">From Rs. 2,499</div>
-            <a class="order" href="https://wa.me/923125353996" target="_blank">
+
+            <a
+                class="order"
+                href="https://wa.me/923125353996"
+                target="_blank"
+            >
                 Order Now
             </a>
         </div>
+
 
         <div class="product">
             <div class="icon">🎧</div>
             <h3>Accessories</h3>
             <p>Trendy accessories and gadgets.</p>
             <div class="price">From Rs. 499</div>
-            <a class="order" href="https://wa.me/923125353996" target="_blank">
+
+            <a
+                class="order"
+                href="https://wa.me/923125353996"
+                target="_blank"
+            >
                 Order Now
             </a>
         </div>
 
     </div>
+
 </section>
 
 <section class="about" id="about">
+
     <h2>About Humais Store</h2>
 
     <p>
@@ -218,28 +331,39 @@ footer {
         electronics and many other products at affordable prices.
         Our goal is to provide quality products and trusted service.
     </p>
+
 </section>
 
 <section class="contact" id="contact">
 
     <h2>📞 Contact Us</h2>
 
-    <p><strong>WhatsApp:</strong> 03125353996</p>
+    <p>
+        <strong>WhatsApp:</strong> 03125353996
+    </p>
 
-    <p><strong>Email:</strong> humaisstore@example.com</p>
+    <p>
+        <strong>Email:</strong> humaisstore@example.com
+    </p>
 
     <br>
 
-    <a class="btn"
-       href="https://wa.me/923125353996"
-       target="_blank">
-       💬 Order on WhatsApp
+    <a
+        class="btn"
+        href="https://wa.me/923125353996"
+        target="_blank"
+    >
+        💬 Order on WhatsApp
     </a>
 
 </section>
 
 <footer>
-    <p>© 2026 Humais Store. All Rights Reserved.</p>
+
+    <p>
+        © 2026 Humais Store. All Rights Reserved.
+    </p>
+
 </footer>
 
 </body>
